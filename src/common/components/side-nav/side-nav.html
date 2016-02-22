@@ -1,0 +1,27 @@
+<md-sidenav md-component-id="left" class="md-sidenav-left">
+
+  <md-toolbar>
+    <div class="md-toolbar-tools">
+      <span><i class="material-icons md-36">menu</i> Menu</span>
+    </div>
+  </md-toolbar>
+
+  <md-list>
+
+    <md-list-item>
+      <div class="md-tile-content">
+        <a ng-href="/" ng-click="$ctrl.toggle()" md-sidenav-focus>Home</a>
+      </div>
+    </md-list-item>
+
+    <md-divider></md-divider>
+
+    <md-list-item>
+      <div class="md-tile-content">
+        <a ng-href="/about" ng-click="$ctrl.toggle()">About Us</a>
+      </div>
+    </md-list-item>
+
+  </md-list>
+
+</md-sidenav>

@@ -1,0 +1,27 @@
+<div>
+  <p>NGRedux</p>
+  <p>Clicked: {{$ctrl.value}} times </p>
+  <button ng-click='$ctrl.increment()'>+</button>
+  <button ng-click='$ctrl.decrement()'>-</button>
+  <button ng-click='$ctrl.incrementIfOdd()'>Increment if odd</button>
+  <button ng-click='$ctrl.incrementAsync()'>Increment Async</button>
+
+  <br>
+
+  <md-button class="md-raised md-primary" ng-click='$ctrl.increment()'>
+    <i class="material-icons">arrow_upward</i> +
+  </md-button>
+
+  <md-button class="md-raised md-primary" ng-click='$ctrl.decrement()'>
+    <i class="material-icons">arrow_downward</i> -
+  </md-button>
+
+  <md-button class="md-raised md-primary" ng-click='$ctrl.incrementIfOdd()'>
+    <i class="material-icons">add_circle</i> Increment if odd
+  </md-button>
+
+  <md-button class="md-raised md-primary" ng-click='$ctrl.incrementAsync()'>
+    <i class="material-icons">timer</i> Increment Async
+  </md-button>
+
+</div>
