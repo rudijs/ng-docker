@@ -3,16 +3,20 @@ FROM mhart/alpine-node:5.6.0
 
 RUN \
   # apk add nodejs logrotate --update && \
-  apk add logrotate --update && \
+  apk add logrotate python make g++ git --update && \
   rm -rf /var/cache/apk/*
 
 # NPM package cache
+COPY package.json /tmp/package.json
 COPY npm-shrinkwrap.json /tmp/npm-shrinkwrap.json
 RUN \
     cd /tmp && \
     npm install --production --progress=false && \
     npm install -g pm2@latest -g && \
     npm cache clean
+
+# remove npm install required tools (for gyp etc...)
+RUN apk del python make g++ git
 
 ENV APP_DIR /srv/app
 ENV APP_USER www-data
@@ -45,5 +49,7 @@ VOLUME ${APP_DIR}
 
 # Application Start
 WORKDIR ${APP_DIR}
+
+# EXPOSE 3000
 
 CMD ["./docker-start.sh"]

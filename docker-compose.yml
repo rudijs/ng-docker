@@ -3,26 +3,53 @@ services:
 
   app:
     container_name: app
+    mem_limit: 128m
+    build:
+      context: .
     image: rudijs/app:${TAG}
-    ports:
-      - 3000:3000
+    # ports:
+    #   - "3000"
+    restart: always
     # network_mode: host
-  #   logging:
-  #     driver: syslog
-  #     options:
-  #       syslog-address: "udp://192.168.0.102:1514"
+    logging:
+      driver: syslog
+      options:
+        syslog-address: "udp://192.168.33.100:1514"
 
-  # filebeat:
-  #   container_name: app-filebeat
-  #   image: prima/filebeat:1.1.0
-  #   depends_on:
-  #     - app
-  #   network_mode: host
-  #   volumes:
-  #     - ./filebeat.yml:/filebeat.yml:ro
-  #   volumes_from:
-  #     - app:ro
-  #   logging:
-  #     driver: syslog
-  #     options:
-  #       syslog-address: "udp://192.168.0.102:1514"
+  filebeat:
+    container_name: app-filebeat
+    image: prima/filebeat:1.1.0
+    depends_on:
+      - app
+    network_mode: host
+    volumes:
+      - /home/ubuntu/filebeat.yml:/filebeat.yml:ro
+    volumes_from:
+      - app:ro
+    logging:
+      driver: syslog
+      options:
+        syslog-address: "udp://192.168.33.100:1514"
+
+  nginx:
+    container_name: nginx
+    mem_limit: 128m
+    build:
+      context: nginx/
+    image: rudijs/nginx
+    depends_on:
+      - app
+    ports:
+      - 80:80
+      - 443:443
+    expose:
+      - 80
+      - 443
+    links:
+      - app:app
+    restart: always
+    command: nginx -g "daemon off;"
+    logging:
+      driver: syslog
+      options:
+        syslog-address: "udp://192.168.33.100:1514"

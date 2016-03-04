@@ -4,7 +4,7 @@ export default (ngModule: ng.IModule) => {
   }
 
   class HomeCtrl {
-    version: string = '1.0.0';
+    version: string = '1.2.3';
   }
 
   ngModule.controller('HomeCtrl', HomeCtrl);
