@@ -1,3 +1,5 @@
+declare var ON_TEST: boolean
+
 /**
  * Add $ctrl on angular scope.
  * $ctrl is in the new angular 1.5 component isolatedScope

@@ -1,6 +1,11 @@
 # ng-docker
 AngularJS Webpack Docker Starter
 
+- git clone ...
+- npm i
+- npm run typings
+
+
 Remote VM
 
 docker-machine ls

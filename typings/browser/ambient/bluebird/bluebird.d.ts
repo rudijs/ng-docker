@@ -1,4 +1,4 @@
-// Compiled using typings@0.6.8
+// Compiled using typings@0.6.10
 // Source: https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/dd328830dddffbe19e9addd7cf8532cbd3600816/bluebird/bluebird.d.ts
 // Type definitions for bluebird 2.0.0
 // Project: https://github.com/petkaantonov/bluebird

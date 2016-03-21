@@ -1,4 +1,4 @@
-// Compiled using typings@0.6.8
+// Compiled using typings@0.6.10
 // Source: https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/7554cff7c4dd34decc2f3dc0d711a6c288174eee/log4js/log4js.d.ts
 // Type definitions for log4js
 // Project: https://github.com/nomiddlename/log4js-node

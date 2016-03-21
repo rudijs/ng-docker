@@ -1,4 +1,4 @@
-// Compiled using typings@0.6.8
+// Compiled using typings@0.6.10
 // Source: https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/02dd2f323e1bcb8a823269f89e0909ec9e5e38b5/karma/karma.d.ts
 // Type definitions for karma v0.13.9
 // Project: https://github.com/karma-runner/karma

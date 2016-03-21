@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "typings": "typings install",
     "test": "npm run karma:ci",
     "karma": "NODE_ENV=test karma start karma.conf.js",
     "karma:single": "npm run karma -- --single-run",

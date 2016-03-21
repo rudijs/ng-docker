@@ -1,4 +1,4 @@
-// Compiled using typings@0.6.8
+// Compiled using typings@0.6.10
 // Source: https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/e081e6899a61bbcf340c48e975bced76621d829a/angulartics/angulartics.d.ts
 // Type definitions for Angulartics v0.20.2
 // Project: http://luisfarzati.github.io/angulartics/
