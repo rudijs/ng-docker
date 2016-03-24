@@ -63,7 +63,10 @@
     "angular": "^1.5.0",
     "angular-animate": "^1.5.0",
     "angular-aria": "^1.5.0",
+    "angular-cookies": "^1.5.2",
+    "angular-jwt": "0.0.9",
     "angular-material": "^1.0.5",
+    "angular-storage": "0.0.13",
     "angular-ui-router": "^0.2.18",
     "angulartics": "^1.0.3",
     "angulartics-google-analytics": "^0.1.4",
@@ -76,6 +79,7 @@
     "koa-static-cache": "^3.1.4",
     "ng-redux": "^3.3.3",
     "redux": "^3.3.1",
-    "redux-thunk": "^1.0.3"
+    "redux-thunk": "^1.0.3",
+    "rx": "^4.1.0"
   }
 }

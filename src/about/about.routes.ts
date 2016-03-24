@@ -5,7 +5,8 @@ export default (ngModule: ng.IModule) => {
     $stateProvider.state('about', {
       url: '/about',
       template: require('./about.html'),
-      controller: 'AboutCtrl as $ctrl'
+      controller: 'AboutCtrl as $ctrl',
+      data: {noAuth: true}
     });
 
   });

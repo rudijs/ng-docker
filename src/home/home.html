@@ -5,6 +5,11 @@
   <p class="highlightz">Version: {{$ctrl.version}}</p>
 
   <a href="/about">About Us</a>
+  <a href="/profile" ng-if="$ctrl.isAuthenticated()">Profile</a>
+
+  <button ng-if="!$ctrl.isAuthenticated()" ng-click="$ctrl.login()">Login</button>
+
+  <button ng-if="$ctrl.isAuthenticated()" ng-click="$ctrl.logout()">Logout</button>
 
   <app-counter></app-counter>
 

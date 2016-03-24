@@ -1,0 +1,13 @@
+<div class="wrapper">
+  <h1>Profile</h1>
+  <a href="/">Home</a>
+  <img
+  ng-src="{{$ctrl.profile.picture}}"
+  alt="{{$ctrl.profile.nickname}}"
+  width="200"
+  height="200"
+  style="border-radius: 10px">
+  <pre>
+    {{$ctrl.profile | json}}
+  </pre>
+</div>

@@ -5,7 +5,8 @@ export default (ngModule: ng.IModule) => {
     $stateProvider.state('home', {
       url: '/',
       template: require('./home.html'),
-      controller: 'HomeCtrl as $ctrl'
+      controller: 'HomeCtrl as $ctrl',
+      data: {noAuth: true}
     });
 
   });

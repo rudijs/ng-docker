@@ -1,10 +1,14 @@
 {
   "ambientDependencies": {
     "angular": "github:DefinitelyTyped/DefinitelyTyped/angularjs/angular.d.ts#1c4a34873c9e70cce86edd0e61c559e43dfa5f75",
+    "angular-jwt": "github:DefinitelyTyped/DefinitelyTyped/angular-jwt/angular-jwt.d.ts#7de6c3dd94feaeb21f20054b9f30d5dabc5efabd",
     "angular-material": "github:DefinitelyTyped/DefinitelyTyped/angular-material/angular-material.d.ts#2d0a1b1502610025bd55ce8eaa48069da8a16c82",
     "angular-mocks": "github:DefinitelyTyped/DefinitelyTyped/angularjs/angular-mocks.d.ts#4de74cb527395c13ba20b438c3a7a419ad931f1c",
+    "angular-storage": "github:DefinitelyTyped/DefinitelyTyped/angular-storage/angular-storage.d.ts#7de6c3dd94feaeb21f20054b9f30d5dabc5efabd",
     "angular-ui-router": "github:DefinitelyTyped/DefinitelyTyped/angular-ui-router/angular-ui-router.d.ts#655f8c1bf3c71b0e1ba415b36309604f79326ac8",
     "angulartics": "github:DefinitelyTyped/DefinitelyTyped/angulartics/angulartics.d.ts#e081e6899a61bbcf340c48e975bced76621d829a",
+    "auth0": "github:DefinitelyTyped/DefinitelyTyped/auth0/auth0.d.ts#56295f5058cac7ae458540423c50ac2dcf9fc711",
+    "auth0-angular": "github:DefinitelyTyped/DefinitelyTyped/auth0-angular/auth0-angular.d.ts#14fe4313f4a1cf69add3505a2ab1dbc690dc2116",
     "bluebird": "github:DefinitelyTyped/DefinitelyTyped/bluebird/bluebird.d.ts#dd328830dddffbe19e9addd7cf8532cbd3600816",
     "chai": "github:DefinitelyTyped/DefinitelyTyped/chai/chai.d.ts#1914a00b3c740348dae407ee0d2be89b0b58ad7f",
     "express": "github:DefinitelyTyped/DefinitelyTyped/express/express.d.ts#dd638012d63e069f2c99d06ef4dcc9616a943ee4",
@@ -16,6 +20,8 @@
     "node": "github:DefinitelyTyped/DefinitelyTyped/node/node.d.ts#263705d313346e093d95cb62cef6fed848e46978",
     "redux": "github:DefinitelyTyped/DefinitelyTyped/redux/redux.d.ts#a820bbdead70913f0c750802b367ed54cb99b442",
     "redux-thunk": "github:DefinitelyTyped/DefinitelyTyped/redux-thunk/redux-thunk.d.ts#75249b97104d00c1ca2451ac29369009a5f2b101",
+    "rx": "npm:rx/ts/rx.all.d.ts",
+    "rx.all": "github:DefinitelyTyped/DefinitelyTyped/rx/rx.all.d.ts#56295f5058cac7ae458540423c50ac2dcf9fc711",
     "serve-static": "github:DefinitelyTyped/DefinitelyTyped/serve-static/serve-static.d.ts#0fa4e9e61385646ea6a4cba2aef357353d2ce77f"
   }
 }

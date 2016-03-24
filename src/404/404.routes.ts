@@ -8,7 +8,8 @@ export default (ngModule: ng.IModule) => {
 
     $stateProvider.state('404', {
       url: '/404',
-      template: require('./404.html')
+      template: require('./404.html'),
+      data: {noAuth: true}
     });
 
   });

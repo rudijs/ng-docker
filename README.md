@@ -5,6 +5,11 @@ AngularJS Webpack Docker Starter
 - npm i
 - npm run typings
 
+The RxJS type definition from DefinitelyTyped does appear to be outdated.
+
+Instead, use the type definition provided by the npm package.
+
+- typings install --save --ambient npm:rx/ts/rx.all.d.ts
 
 Remote VM
 

@@ -1,11 +1,9 @@
 export default (ngModule: ng.IModule) => {
-  if (ON_TEST) {
-    require('./home.controller_spec').default(ngModule);
-  }
+  // if (ON_TEST) {
+  //   require('./profile.controller_spec').default(ngModule);
+  // }
 
-  class HomeCtrl {
-    version: string = '1.0.0';
-
+  class LoginCtrl {
     constructor(
       private $scope: any,
       private $http: any,
@@ -35,10 +33,9 @@ export default (ngModule: ng.IModule) => {
     isAuthenticated() {
       return this.auth.isAuthenticated;
     }
-
-
   }
 
-  ngModule.controller('HomeCtrl', HomeCtrl);
+  ngModule.controller('LoginCtrl', LoginCtrl);
+
 
 }
